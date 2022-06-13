@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Survey</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <ul class="navbar-content">
+      <li id="logo"><a href="" target="_self">Gaming Survey</a></li>
+      <li><a href="" target="_top">Home</a></li>
+      <li id="float-right"><a href="#foot">Contact Us</a></li>
+    </ul>
+  </div>
+  <div class="container">
+    <header class="header">
+      <h1 id="title">Gaming Survey</h1>
+      <p id="description">Thank you for your time and input.</p>
+    </header>
+
+    <form id="survey-form">
+
+      <div class="form-group">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" name="name" id="name" class="form-input" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email" id="email-label">Email</label>
+        <input type="email" name="email" id="email" class="form-input" placeholder="Enter your Email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="age" id="number">Age</label>
+        <input type="number" name="age" id="number" class="form-input" min="13" max="40" placeholder="Enter your age"
+          required>
+      </div>
+
+      <div class="form-group">
+        <p>How much time do you spend playing games daily?</p>
+        <select id="dropdown" name="playtime" class="form-input" required>
+          <option disabled selected value>Playtime</option>
+          <option value="less-then-a-hour">Less then a hour</option>
+          <option value="between-1-to-2-hours">Between 1 to 2 hours</option>
+          <option value="more-then-3-hours">More then 3 hours</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Which platform do you prefer for playing video games?</p>
+        <label>
+          <input type="radio" name="platform" value="pc" class="radio-input">PC</input>
+        </label>
+        <label>
+          <input type="radio" name="platform" value="console" class="radio-input">Console</input>
+        </label>
+        <label>
+          <input type="radio" name="platform" value="mobile" class="radio-input">Mobile</input>
+        </label>
+      </div>
+
+      <div class="form-group">
+        <p>What genre of games do you play? <span class="clue">(Check all that apply)</span></p>
+        <label>
+          <input type="checkbox" name="genre" value="action" class="checkbox-input">Action</input>
+        </label>
+        <label>
+          <input type="checkbox" name="genre" value="adventure" class="checkbox-input">Adventure</input>
+        </label>
+        <label>
+          <input type="checkbox" name="genre" value="role-play" class="checkbox-input">Role Play</input>
+        </label>
+        <label>
+          <input type="checkbox" name="genre" value="sports" class="checkbox-input">Sports</input>
+        </label>
+        <label>
+          <input type="checkbox" name="genre" value="puzzle" class="checkbox-input">Puzzle</input>
+        </label>
+        <label>
+          <input type="checkbox" name="genre" value="online" class="checkbox-input">Online</input>
+        </label>
+      </div>
+
+      <div class="form-group">
+        <p>Why do you play Video games?</p>
+        <textarea id="comments" class="textarea-input" name="comment"
+          placeholder="Enter your comment here..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <footer id="foot">
+    <div>
+      <span id="footer-content">Get connected with us on social networks:</span>
+    </div>
+
+    <div>
+      <a href="">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </footer>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+</body>
+
+</html>
