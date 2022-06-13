@@ -18,7 +18,7 @@ body::before {
   width: 100%;
   z-index: -1;
   background: #1b1b32;
-  background-image: url(/images/background.jpg);
+  background-image: url("https://images.unsplash.com/photo-1580234811497-9df7fd2f357e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2067&q=80");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
