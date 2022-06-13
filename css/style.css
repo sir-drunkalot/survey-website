@@ -104,6 +104,10 @@ a {
   padding: 0 1rem;
 }
 
+li:hover {
+  font-weight: bolder;
+}
+
 #float-right {
   float: right;
 }
@@ -177,7 +181,7 @@ form {
 
 .textarea-input {
   min-height: 120px;
-  width: 96%;
+  width: 96.5%;
   padding: 0.625rem;
   resize: vertical;
 }
@@ -206,4 +210,9 @@ footer {
 
 i {
   padding-top: 1rem;
+}
+
+#dropdown {
+  width: 39.52rem;
+  height: 3.15rem;
 }
