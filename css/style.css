@@ -60,6 +60,73 @@ button {
   border: none;
 }
 
+.navbar {
+  position: fixed;
+  z-index: +1;
+  top: 0;
+  width: 100%;
+  /* overflow: hidden; */
+  background-color: #2f234e;
+}
+
+.navbar .nav-links {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.drpdown {
+  float: right;
+  overflow: hidden;
+  width: 150px;
+}
+
+.drpdown .drpbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  width: 150px;
+}
+
+.navbar .nav-links:hover,
+.drpdown:hover .drpbtn {
+  background-color: red;
+}
+
+.drpdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.drpdown-content .nav-links {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.drpdown-content .nav-links:hover {
+  background-color: #ddd;
+}
+
+.drpdown:hover .drpdown-content {
+  display: block;
+}
+
 .container {
   width: 100%;
   margin: 0 auto 0 auto;
@@ -75,41 +142,6 @@ button {
   .container {
     max-width: 720px;
   }
-}
-
-.navbar {
-  position: fixed;
-  z-index: +1;
-  top: 0;
-  width: 100%;
-}
-
-.navbar-content {
-  list-style-type: none;
-  margin: 0;
-  padding: 1rem;
-  overflow: hidden;
-  background: rgba(27, 27, 50, 1);
-}
-
-li {
-  display: inline;
-  float: left;
-}
-
-a {
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  padding: 0 1rem;
-}
-
-li:hover {
-  font-weight: bolder;
-}
-
-#float-right {
-  float: right;
 }
 
 .header {
@@ -196,6 +228,11 @@ form {
   cursor: pointer;
 }
 
+.submit-button:hover {
+  transform: scaley(1.05);
+  background: #3dc270;
+}
+
 #footer-content {
   font-size: 1.25rem;
   font-style: italic;
@@ -215,4 +252,9 @@ i {
 #dropdown {
   width: 39.52rem;
   height: 3.15rem;
+}
+
+.foot-icons {
+  color: #fff;
+  padding: 10px;
 }
